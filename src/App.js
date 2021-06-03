@@ -126,6 +126,15 @@ export default function CustomizedButtons() {
       >
         Secondary
       </Button>
+
+      {/* Experiementing with default themes */}
+      <Button
+        color="primary" //primary and secondary colors switched in theme document
+        variant="contained"
+        className={classes.margin}
+      >
+        Please Work
+      </Button>
     </div>
   );
 }
