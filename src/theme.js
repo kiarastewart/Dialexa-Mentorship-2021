@@ -8,6 +8,7 @@ const theme = createMuiTheme({
       light: "7A7CFF" //for light mode
     }
   },
+
   typography: {
     fontFamily: "Poppins",
     fontSize: 14,
@@ -18,6 +19,24 @@ const theme = createMuiTheme({
   },
   shape: {
     borderRadius: 36
+  },
+  overrides: {
+    MuiButton: {
+      root: {
+        textTransform: "none",
+        padding: "8px 16px",
+        margin: "16px"
+      },
+      outlined: {
+        borderWidth: "3px"
+      },
+      "&:hover": {}
+    }
+  },
+  props: {
+    MuiButton: {
+      disableRipple: true
+    }
   }
 });
 

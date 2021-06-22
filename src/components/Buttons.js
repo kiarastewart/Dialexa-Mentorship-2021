@@ -1,17 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button } from "@material-ui/core/Button";
+import Button from "@material-ui/core/Button";
 
-const Buttons = ({ color, children }) => {
+const Buttons = ({ variant, color, children, size }) => {
   return (
-    <Button variant="contained" color={color} disableElevation>
+    <Button variant={variant} color={color} size={size}>
       {children}
     </Button>
   );
 };
 
 Buttons.propTypes = {
-  color: PropTypes.string
+  color: PropTypes.string,
+  variant: PropTypes.string,
+  size: PropTypes.string
 };
 
 export default Buttons;

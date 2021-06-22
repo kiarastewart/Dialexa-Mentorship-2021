@@ -6,7 +6,17 @@ import Buttons from "./components/Buttons";
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Buttons color="primary">Primary</Buttons>
+      <Buttons variant="contained" color="primary" size="large">
+        Dialexa Mentorship 2021
+      </Buttons>
+
+      <Buttons variant="text" color="primary">
+        Dialexa Mentorship 2021
+      </Buttons>
+
+      <Buttons variant="outlined" color="primary" size="small">
+        Dialexa Mentorship 2021
+      </Buttons>
     </ThemeProvider>
   );
 }
